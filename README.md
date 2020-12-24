@@ -1,14 +1,8 @@
-package com.company;
+# Lab6 
 
-public class Main {
-
-    public static void main(String[] args) {
-      //  new Main().notOptimized();
-        new Main().optimazed();
-
-    }
-
-    public void notOptimized(){
+### Lab code
+``` java
+ public void notOptimized(){
         System.out.println("\n Inside main()\n");
         String typeOfShape = "dog";
         int i = 0;
@@ -54,6 +48,16 @@ public class Main {
         return;
     }
 
+```
+
+### Task
+Profile optimized and non optimized code .
+For profiling code i will use CPU Profiler which build-in into the IDE.
+For code optimization i will delete all static methods in the `static void drawDog()` and  `static void drawCat()`
+With this optimization , out code executed better and faster . 
+
+### Optimized code
+``` java
 
     public void optimazed(){
         System.out.println("\n Inside main()\n");
@@ -93,6 +97,11 @@ public class Main {
         }
         return;
     }
+```
+The profiler results
+### Not Optimized
 
+![alt text](src/img/notOptimized.png) 
 
-}
+### Optimized code profiler result
+![alt text](src/img/Optimized.png) 
